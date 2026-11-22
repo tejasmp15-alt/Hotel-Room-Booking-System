@@ -1,0 +1,36 @@
+{
+  "name": "hotel-room-booking",
+  "version": "1.0.0",
+  "description": "Hotel Room Booking System - STQA Project (Team 11: Tejas M P & Ashok N M)",
+  "main": "backend/server.js",
+  "scripts": {
+    "init-db": "node database/init.js",
+    "reset-db": "node database/init.js --reset",
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "test": "node tests/run-tests.js",
+    "test:headed": "node tests/run-tests.js --headed",
+    "test:cli": "npx testcafe \"chrome --disable-native-automation\" tests/fixtures/*.test.js",
+    "report": "node tests/generate-html-report.js",
+    "generate-ppt": "python documentation/generate_ppt.py"
+  },
+  "keywords": [
+    "hotel-room-booking",
+    "express",
+    "sqlite",
+    "testcafe",
+    "stqa",
+    "team-11"
+  ],
+  "author": "Tejas M P & Ashok N M (Team 11)",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "testcafe": "^3.7.7"
+  }
+}
